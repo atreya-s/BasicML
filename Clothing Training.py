@@ -4,8 +4,8 @@ import tensorflow as tf
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 
 # Normalizing the pixel values
-x_train = x_train / 255.0
-x_test = x_test / 255.0
+x_train /= 255
+x_test /= 255
 
 # Build the model
 model = tf.keras.Sequential([
